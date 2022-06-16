@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@200;400&display=swap"
+        rel="stylesheet">
+    <title>sign up page</title>
+</head>
+
+<body>
+    <div>
+        <div class="bg-image"></div>
+        <div class="bg-text">
+            <p>
+                Let's go Green!
+            </p>
+            <!-- 
+                image credit goes to @panduior
+             -->
+        </div>
+    </div>
+    <div id="main-content">
+        <header>
+            <h2>
+                We, as a species, have done so much harm to our mother Earth...
+                And now it's time to make amend for the sake of ourselves and our next generations...
+            </h2>
+        </header>
+        <main>
+            <form action="http://www.httpbin/post" method="post">
+                <div>
+                    <label for="fname">*First Name</label>
+                    <input type="text" name='fname' id="fname" required>
+                </div>
+                <div>
+                    <label for="lname">*Last name</label>
+                    <input type="text" name='lname' id="lname" required>
+                </div>
+                <div>
+                    <label for="email">*Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">*Password</label>
+                    <input type="password" name="password" id="pw" required>
+                </div>
+                <div>
+                    <label for="confirm-pw">*Confirm Password</label>
+                    <input type="password" name="confirm-pw" id="confirm-pw" required
+                    onblur="validate()">
+                </div>
+            </form>
+        
+        </main>
+        <footer>
+            <button id="create-acc" onclick="createAcc()">Create Account</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
